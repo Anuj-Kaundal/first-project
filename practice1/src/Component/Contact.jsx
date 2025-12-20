@@ -24,7 +24,7 @@ function Contact() {
                     <input className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' type="number" name="contact" id="contact" placeholder='Enter Contact Number' /><br />
                     <input className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' type="text" name="subject" id="subject" placeholder='Enter Subject' /><br />
                     <textarea className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' name="message" id="message" placeholder='Enter Message'></textarea><br />
-                    <input className='p-3 mb-5 w-100 text-white font-semibold rounded-xl mt-6 bg-[#4169E1]' type="submit" name="submit" id="submit" />
+                    <input className='p-3 mb-5 w-100 text-white font-semibold rounded-xl mt-6 bg-[#4169E1] cursor-pointer' type="submit" name="submit" id="submit" />
                 </div>
             </div>
         </div>
