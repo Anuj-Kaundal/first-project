@@ -6,7 +6,7 @@ function Header() {
   return (
     <div>
       <div className='p-5 shadow-lg flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-white shadow-gray-300'>
-        <img src="image1.png" alt="" height={200} width={200} />
+        <img src="public/image1.png" alt="" height={200} width={200} />
         <ul className='hidden lg:flex gap-15 justify-center '>
           <li onClick={()=>navigator('/')} className='cursor-pointer'>Home</li>
           <li>Services</li>
