@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div className='bg-amber-100'>
+        <div className='bg-amber-100 pt-30'>
             <div className='flex justify-center yg items-center gap-30 p-10'>
                 {/* location */}
                 <div className='w-fit bg-white rounded-2xl'>

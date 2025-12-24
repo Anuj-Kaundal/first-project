@@ -14,7 +14,7 @@ function Home() {
       <div className="w-full h-screen relative">
 
         {/* Hero Background Image */}
-        <img src="image3.png" alt="" className="w-full h-170 object-cover" />
+        <img src="image3.png" alt="" className="w-full h-full bg-center" />
 
         {/* Hero Heading */}
         <h1 className="text-5xl text-black font-extrabold text-center absolute top-[28%] left-1/2 -translate-x-1/2">
@@ -193,7 +193,7 @@ function Home() {
       {/* ======= SERVICES SECTION END ======= */}
       {/* ======= Process section start ======= */}
       <div className=' bg-[#03031C] text-white text-center p-15'>
-        <h1 className='text-4xl underline'>Process</h1>
+        <h1 className='text-4xl underline mb-10'>Process</h1>
         <div className='flex gap-7 '>
           <div className='border-2 rounded-2xl'>
             <GiCube className='ml-10 mt-5 text-7xl' />
@@ -375,14 +375,134 @@ function Home() {
       </div>
       {/* ======= Why Choose Us end ======= */}
       {/* ======= Start your project Today! start ======= */}
-      <div className='bg-white p-15'>
-        <h1 className='text-4xl text-center p-10'>Start your <span className='underline text-blue-600 decoration-blue-400 decoration-2'>project</span> Today!</h1>
+      <div className='bg-gray-100 p-5'>
+        <h1 className='text-4xl text-center'>Start your <span className='underline text-blue-600 decoration-blue-400 decoration-2'>project</span> Today!</h1>
+        <div className='flex justify-center yg items-center gap-30 p-10'>
+          {/* location */}
+          <div className='w-fit bg-white rounded-2xl'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.5106822746134!2d78.0036214753556!3d30.30798877479193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092be94375e729%3A0xc160311fe8cb82d6!2sNovaNectar%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1766072879965!5m2!1sen!2sin" height={300} width={450} className='rounded-2xl' ></iframe>
+            <div className='p-5'>
+              <h1 className='text-xl font-semibold mb-3'>Address</h1>
+              <p className='mb-2'>GMS Rd, Haripuram, Kanwali, Dehradun, Uttarakhand <br /> 248001</p>
+              <h1 className='text-xl font-semibold mb-3'>Email</h1>
+              <p className='mb-2'>info@novanectar.co.in</p>
+              <h1 className='text-xl font-semibold mb-3'>Phone Number</h1>
+              <p>+91 8979891703 <br /> +91 8979891705</p>
+            </div>
+          </div>
+          {/* contact form */}
+          <div className='w-fit p-10 bg-white rounded-2xl'>
+            <h1 className='text-3xl font-semibold text-center mb-3.5'>Contact Us Now</h1>
+            <input className='p-3 w-100 border-2 rounded-xl border-gray-400' type="text" name="name" id="name" placeholder='Enter Your Name' /><br />
+            <input className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' type="email" name="email" id="email" placeholder='Enter Email' /><br />
+            <input className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' type="number" name="contact" id="contact" placeholder='Enter Contact Number' /><br />
+            <input className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' type="text" name="subject" id="subject" placeholder='Enter Subject' /><br />
+            <textarea className='p-3 w-100 border-2 rounded-xl border-gray-400 mt-6' name="message" id="message" placeholder='Enter Message'></textarea><br />
+            <input className='p-3 mb-5 w-100 text-white font-semibold rounded-xl mt-6 bg-[#4169E1] cursor-pointer' type="submit" name="submit" id="submit" />
+          </div>
+        </div>
       </div>
       {/* ======= Start your project Today! end ======= */}
-      {/* ======= footer start ======= */}
-      
+      {/* ======= Testimonials start ======= */}
+      <div className="bg-[url('/public/testimonial.jpg')] bg-cover bg-center p-15">
+        <h1 className='text-5xl font-semibold text-center mb-5'><span className='underline decoration-blue-400 decoration-4'>Client</span> Testimonials</h1>
+        <p className='text-gray-600 text-center mb-30 font-semibold'>Discover how we've transformed businesses with our digital solutions</p>
+        {/* testimonials content */}
+        {/* 1st testimonial */}
+        <div className='flex gap-8 pb-20 justify-center'>
+          <div className='pl-10 pr-10 pt-10 pb-10 bg-white rounded-2xl'>
+            <p>Nova Nectar excels at managing our social media, understanding each platform's needs and creating content that drives impressive results. We’re thrilled with the outcome.</p>
+            <div className='flex text-4xl font-bold justify-center pt-10 pb-5'>
+              <span className="inline-flex items-center justify-center w-15 h-15 bg-blue-500 text-white rounded-full">S</span> <br />
+            </div>
+            <div className='text-center font-semibold'>
+              <span>Shomyansh Chouhan</span><br />
+              <span>VIMRO INTERNATIONAL</span>
+            </div>
+          </div>
+          {/* 2nd testimonial */}
+          <div className='pl-10 pr-10 pt-10 pb-10 bg-white rounded-2xl'>
+            <p>Nova Nectar excels at managing our social media, understanding each platform's needs and creating content that drives impressive results. We’re thrilled with the outcome.</p>
+            <div className='flex text-4xl font-bold justify-center pt-10 pb-5'>
+              <span className="inline-flex items-center justify-center w-15 h-15 bg-blue-500 text-white rounded-full">A</span> <br />
+            </div>
+            <div className='text-center font-semibold'>
+              <span>Abhinav Negi</span><br />
+              <span>ANGEL ONE</span>
+            </div>
+          </div>
+          {/* 3rd testimonial */}
+          <div className='pl-10 pr-10 pt-10 pb-10 bg-white rounded-2xl'>
+            <p>Nova Nectar excels at managing our social media, understanding each platform's needs and creating content that drives impressive results. We’re thrilled with the outcome.</p>
+            <div className='flex text-4xl font-bold justify-center pt-10 pb-5'>
+              <span className="inline-flex items-center justify-center w-15 h-15 bg-blue-500 text-white rounded-full">M</span> <br />
+            </div>
+            <div className='text-center font-semibold'>
+              <span>Manish</span><br />
+              <span>PAI CUBES CLASSES</span>
+            </div>
+          </div>
+          {/* 4th testimonial */}
+          <div className='pl-10 pr-10 pt-10 pb-10 bg-white rounded-2xl'>
+            <p>Nova Nectar excels at managing our social media, understanding each platform's needs and creating content that drives impressive results. We’re thrilled with the outcome.</p>
+            <div className='flex text-4xl font-bold justify-center pt-10 pb-5'>
+              <span className="inline-flex items-center justify-center w-15 h-15 bg-blue-500 text-white rounded-full">K</span> <br />
+            </div>
+            <div className='text-center font-semibold'>
+              <span>Kritika Manish Bhatia</span><br />
+              <span>BOMBAY JEWELLERSL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Testimonials end */}
+      {/* ======= FAQ start ======= */}
+      <div className="flex justify-center gap-10 bg-blue-950 p-10 text-white">
+
+        {/* Left Content */}
+        <div className="w-1/2 p-10">
+          <h1 className="font-bold mb-4">FAQ</h1>
+          <h2 className="text-4xl font-semibold mb-6">
+            Let's Make Something Awesome Together
+          </h2>
+
+          <p className="mb-4">
+            At Novanectar Services, we believe in transforming ideas into impactful IT
+            Solutions. From website development to app creation, SEO, graphic design,
+            UI/UX, and digital marketing, we specialize in crafting tailored strategies
+            to meet your goals.
+          </p>
+
+          <p className="mb-4">
+            Let's make something awesome together! Whether you need a dynamic website,
+            a feature-rich app, or a creative marketing campaign, our team ensures
+            quality, innovation, and seamless execution.
+          </p>
+
+          <p>
+            Got questions? Explore our services, timelines, or processes in our FAQ
+            section. Together, we'll build exceptional solutions that elevate your
+            brand and achieve remarkable results. Reach out today!
+          </p>
+        </div>
+
+        {/* Right FAQ List */}
+        <div className="w-1/2 pl-20 pr-20 p-10 pt-20">
+          <ul className="space-y-4 text-lg">
+            <li className='pt-3 border-t'>Do you provide website maintenance and updates post-launch?</li>
+            <li className='p-3 border-b border-t'>How do you ensure app security and data privacy?</li>
+            <li className='p-3 border-b'>How long does it take to see SEO results?</li>
+            <li className='p-3 border-b'>How many design revisions do you offer?</li>
+            <li className='p-3 border-b'>Do you conduct user testing for design projects?</li>
+            <li className='p-3 border-b'>What digital marketing strategies do you specialize in?</li>
+          </ul>
+        </div>
+
+      </div>
+      {/* ======= FAQ end ======= */}
     </div>
     // ======= MAIN WRAPPER END =======
+
   )
 }
 

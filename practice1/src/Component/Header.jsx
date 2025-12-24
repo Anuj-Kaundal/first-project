@@ -5,13 +5,13 @@ function Header() {
   const navigator=useNavigate();
   return (
     <div>
-      <div className='p-5 shadow-lg flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-white shadow-gray-300'>
+      <div className='p-5 shadow-lg flex justify-between items-center fixed w-full top-0 left-0 z-50 bg-white shadow-gray-300'>
         <img src="public/image1.png" alt="" height={200} width={200} />
         <ul className='hidden lg:flex gap-15 justify-center '>
           <li onClick={()=>navigator('/')} className='cursor-pointer'>Home</li>
           <li>Services</li>
-          <li>Our work</li>
-          <li>About us</li>
+          <li onClick={()=>navigator('/ourwork')} className='cursor-pointer'>Our work</li>
+          <li onClick={()=>navigator('/about')} className='cursor-pointer'>About us</li>
           <li onClick={()=>navigator('/blog')} className='cursor-pointer'>Blog</li>
           <li>Career</li>
         </ul>
